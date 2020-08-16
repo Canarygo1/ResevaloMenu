@@ -8,6 +8,7 @@ import locale_it from "./translations/it.json";
 import locale_sp from "./translations/sp.json";
 import { createBrowserHistory } from "history";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import LenguageSelection from "./pages/lenguage_selection";
 const history = createBrowserHistory();
 
 const data = {
@@ -22,11 +23,16 @@ const language = "sp";
 
 function App() {
     return (
-
       <Router history={history}>
         <Switch>
-          <Route path="/cartas/:id" exact>
-             <IntlProvider locale={language} messages={data[language]}>
+            <Route exact path='/cartas/:id' component={LenguageSelection}>
+          </Route>
+        </Switch>
+      </Router>
+    );
+}
+/*
+<IntlProvider locale={language} messages={data[language]}>
 
                 <div className="App">
                     <p>
@@ -42,10 +48,5 @@ function App() {
                      </p>
                 </div>
              </IntlProvider>
-          </Route>
-        </Switch>
-      </Router>
-    );
-}
-
+ */
 export default App;
