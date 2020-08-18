@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #2C2D2F !important;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,3 +12,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#toggle-drop{
+  background-color: #121318;
+}
+
+#toggle-drop:focus{
+  box-shadow: none;
+}
+.header-menu{
+  color: #0090FF;
+  font-size: 150%;
+}
+.tittle{
+  color: #0090FF;
+  padding-top: 2%;
+}
+.main-inCard{
+  font-size: 100%;
+  color: white;
+}
+.price-card{
+  font-size: 130%;
+  color: #E6565A;
+}
+.insta-image{
+  width: 100%;
+  height: 100%;
+}
+#item-drop-lenguage:hover{
+  background-color: #E6565A !important;
+}
+#item-drop-lenguage:active{
+  background-color: #E6565A !important;
+}
+.menu-drop{
+  background-color: #121318 !important;
+}
+
+
