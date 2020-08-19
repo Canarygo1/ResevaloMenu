@@ -11,12 +11,12 @@ const fileLenguages = [locale_sp, locale_fr, locale_en, locale_it, locale_al];
 const codeLenguage = ["es", "fr", "en", "it", "de"];
 
 class Ervaza extends Component {
+
     render() {
         let codeDefault = parseInt(this.props.match.params.codeDefault);
-        return (
-            <div>
+        return (<div>
                 <IntlProvider locale={codeLenguage[codeDefault]} messages={fileLenguages[codeDefault]}>
-                    <Card codeDefault={this.props.match.params.codeDefault}/>
+                    <Card codeDefault={this.props.match.params.codeDefault} id={this.props.match.params.id}/>
                 </IntlProvider>
             </div>
         );

@@ -10,8 +10,8 @@ function App() {
     return (
       <Router history={history}>
         <Switch>
-            <Route exact path='/cartas/ervaza' component={LenguageSelection} />
-            <Route exact path='/cartas/ervaza/:codeDefault' component={Ervaza} />
+            <Route exact path='/cartas/:id(ervaza)' component={LenguageSelection} />
+            <Route exact path='/cartas/:id(ervaza)/:codeDefault' component={Ervaza} />
         </Switch>
       </Router>
     );

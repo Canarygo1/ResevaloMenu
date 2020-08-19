@@ -13,7 +13,7 @@ InfoText.propTypes = {
 
 function InfoText(props) {
 
-    function createRows(number, element) {
+    function createRowWithPrice(number, element) {
         let elementRows = [];
         for (let i = 1; i <= number; i++) {
             elementRows.push(
@@ -34,6 +34,7 @@ function InfoText(props) {
         }
         return elementRows;
     }
+
     return (
         <div>
             <h3 style={{color:"#0090FF"}}>
@@ -41,25 +42,25 @@ function InfoText(props) {
                     id="started"
                     defaultMessage={""}/>
             </h3>
-            {createRows(props.firstCase, "started")}
+            {createRowWithPrice(props.firstCase, "started")}
             <h3 className="tittle">
                 <FormattedMessage
                     id="plate"
                     defaultMessage={""}/>
             </h3>
-            {createRows(props.secondCase, "plate")}
+            {createRowWithPrice(props.secondCase, "plate")}
             <h3 className="tittle">
                 <FormattedMessage
                     id="combo"
                     defaultMessage={""}/>
             </h3>
-            {createRows(props.thirdCase, "combo")}
+            {createRowWithPrice(props.thirdCase, "combo")}
             <h3 className="tittle">
                 <FormattedMessage
                     id="drink"
                     defaultMessage={""}/>
             </h3>
-            {createRows(props.fourCase, "drink")}
+            {createRowWithPrice(props.fourCase, "drink")}
         </div>
     );
 }

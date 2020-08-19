@@ -48,5 +48,14 @@ code {
 .menu-drop{
   background-color: #121318 !important;
 }
+.flags-styles{
+  width: 80%;
+  height: 80% !important;
+}
+.circle-image-storie{
+  width: 10%;
+  height: 50px;
+}
+
 
 
