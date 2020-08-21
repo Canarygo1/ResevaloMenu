@@ -1,10 +1,11 @@
-import React, {useState} from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import Stories from "react-insta-stories";
 import Image from "react-bootstrap/Image";
+import {Link} from "react-router-dom";
 
 StorieComponent.propTypes = {
-    imagesUrls:PropTypes.array.isRequired,
+    id:PropTypes.string.isRequired,
+    codeDefault:PropTypes.string.isRequired,
 };
 
 /*
@@ -16,36 +17,12 @@ Colocar el circulo y las historias en columna junto con los titulos de menu { re
  */
 
 function StorieComponent(props) {
-    function initialWidget() {
-        return <Image className="rounded-circle circle-image-storie" src="/Prueba1.png"
-        onClick={() => updateWidget(widget = <Stories
-            stories={stories2}
-            defaultInterval={1500}
-            width={200}
-            height={400}
-            />)
-        }/>
-    }
-    let [widget, updateWidget] = useState(initialWidget());
-    let [stories2]= useState(createPictures());
-    function createPictures() {
-        let objectStories = [];
-        props.imagesUrls.forEach((element) =>{
-            objectStories.push(
-                {
-                    content: props => {
-                        return <div>
-                            <img className={"insta-image"} src={element}/>
-                        </div>
-                    }
-                }
-            );
-        })
-        return objectStories;
-    }
+
     return (
         <div>
-            {widget}
+            <Link to={`/cartas/${props.id}/${props.codeDefault}/stories`}>
+                <Image className="rounded-circle circle-image-storie" src="/Prueba1.png"/>
+            </Link>
         </div>
     );
 }
