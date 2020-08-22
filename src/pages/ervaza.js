@@ -21,6 +21,7 @@ class Ervaza extends Component {
                     <DownBarLogos urls={["https://www.facebook.com/Ervaza-Mariscos-Frescos-1338259009531552",
                     "https://www.instagram.com/explore/locations/1338259009531552/ervaza-mariscos-frescos/?hl=es",
                     "https://ervaza.com/"]}/>
+
                 </IntlProvider>
             </div>
         );

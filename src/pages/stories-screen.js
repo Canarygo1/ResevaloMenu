@@ -6,27 +6,19 @@ import {faTimes} from "@fortawesome/free-solid-svg-icons/faTimes";
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
-const images = [
-    {
-        original: 'https://picsum.photos/id/1018/1000/600/',
-        thumbnail: 'https://picsum.photos/id/1018/250/150/',
-    },
-    {
-        original: 'https://picsum.photos/id/1015/1000/600/',
-        thumbnail: 'https://picsum.photos/id/1015/250/150/',
-    },
-    {
-        original: 'https://picsum.photos/id/1019/1000/600/',
-        thumbnail: 'https://picsum.photos/id/1019/250/150/',
-    },
-];
-
+let imagesUrls = [];
 class StoriesScreen extends Component {
 
+    constructor(props, context) {
+        super(props, context);
+        imagesUrls = props.location.state.imagesUrls
+        console.log(imagesUrls)
+    }
+
     render() {
-        function createPictures() {
+        function createPicturesToMobile() {
             let objectStories = [];
-            ["/test01.jpg", "/PRUEBA2.png"].forEach((element) =>{
+            imagesUrls.forEach((element) => {
                 objectStories.push(
                     {
                         content: props => {
@@ -40,24 +32,37 @@ class StoriesScreen extends Component {
             return objectStories;
         }
 
-        if(window.innerWidth > 800){
+        function createPicturesToPC(){
+            let objectStories = [];
+            imagesUrls.forEach((element) => {
+                objectStories.push(
+                    {
+                        original: element,
+                        thumbnail: element,
+                    }
+                );
+            })
+            return objectStories;
+        }
+
+        if (window.innerWidth > 800) {
             return (
-                <div className="container">
-                    <ImageGallery items={images} />;
+                <div className="container mt-2">
+                    <ImageGallery items={createPicturesToPC()} showBullets={true} autoPlay={true}/>;
                 </div>
             );
-        }else{
+        } else {
             return (
                 <div>
-                    <div className="close-stories" onClick={() => this.props.history.goBack()}>
-                        <FontAwesomeIcon icon={faTimes} className={"close-icon"}/>
-                    </div>
                     <Stories
-                        stories={createPictures()}
-                        defaultInterval={1500}
+                        stories={createPicturesToMobile()}
+                        defaultInterval={2500}
                         width={window.innerWidth}
                         height={window.innerHeight}
                     />
+                    <div className="close-stories" onClick={() => this.props.history.goBack()}>
+                        <FontAwesomeIcon icon={faTimes} className={"close-icon"}/>
+                    </div>
                 </div>
             );
         }

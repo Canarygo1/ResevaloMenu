@@ -1,0 +1,59 @@
+{
+  "urls-website": [
+    {
+      "facebook-url": "https://www.facebook.com/Ervaza-Mariscos-Frescos-1338259009531552"
+    },
+    {
+      "instagram-url": "https://www.instagram.com/explore/locations/1338259009531552/ervaza-mariscos-frescos/?hl=es"
+    },
+    {
+      "web-url": "https://ervaza.com/"
+    }
+  ],
+  "product-types": [
+    {
+      "type": "started",
+      "number": 6
+    },
+    {
+      "type": "plate",
+      "number": 9
+    },
+    {
+      "type": "combo",
+      "number": 2
+    },
+    {
+      "type": "drink.wine",
+      "number": 6
+    },
+    {
+      "type": "drink.cava",
+      "number": 3
+    }
+  ],
+  "images-urls": [
+    {
+      "type-1": [
+        "/images/ervaza/c.png",
+        "/images/ervaza/c2.png"
+      ],
+      "type-2": [
+        "/images/ervaza/c.png",
+        "/images/ervaza/c2.png"
+      ],
+      "type-3": [
+        "/images/ervaza/c.png",
+        "/images/ervaza/c2.png"
+      ],
+      "type-4": [
+        "/images/ervaza/c.png",
+        "/images/ervaza/c2.png"
+      ],
+      "type-5": [
+        "/images/ervaza/c.png",
+        "/images/ervaza/c2.png"
+      ]
+    }
+  ]
+}

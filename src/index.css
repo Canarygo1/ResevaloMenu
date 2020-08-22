@@ -72,7 +72,8 @@ code {
   width: 30px;
   height: 30px;
   top: 3%;
-  left: 3%;
+  float: right;
+  right: 3%;
   z-index: 1000;
 }
 .sub-title{

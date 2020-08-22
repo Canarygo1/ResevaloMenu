@@ -12,6 +12,12 @@ TableContents.propTypes = {
 
 function TableContents(props) {
 
+    let imagesUrls1 = ["/images/ervaza/ceviche.jpeg",
+        "/images/ervaza/pulpo a la gallega.jpeg",
+        "/images/ervaza/tartarAtun.jpeg",];
+    let imagesUrls2 = ["/images/ervaza/mariscada.jpeg",
+        "/images/ervaza/gambas.jpeg"];
+
     function createRowWithPrice(number, element) {
         let elementRows = [];
         for (let i = 1; i <= number; i++) {
@@ -45,7 +51,7 @@ function TableContents(props) {
                     </h3>
                 </Col>
                 <Col xs="1" lg="1" md="1">
-                    <StorieComponent id={props.id} codeDefault={props.codeDefault}/>
+                    <StorieComponent id={props.id} codeDefault={props.codeDefault} imagesUrls={imagesUrls1}/>
                 </Col>
             </Row>
             {createRowWithPrice(6, "started")}
@@ -58,7 +64,7 @@ function TableContents(props) {
                     </h3>
                 </Col>
                 <Col xs="1" lg="1" md="1">
-                    <StorieComponent id={props.id} codeDefault={props.codeDefault}/>
+                    <StorieComponent id={props.id} codeDefault={props.codeDefault} imagesUrls={imagesUrls2}/>
                 </Col>
             </Row>
             {createRowWithPrice(9, "plate")}
@@ -70,9 +76,6 @@ function TableContents(props) {
                             defaultMessage={""}/>
                     </h3>
                 </Col>
-                <Col xs="1" lg="1" md="1">
-                    <StorieComponent id={props.id} codeDefault={props.codeDefault}/>
-                </Col>
             </Row>
             {createRowWithPrice(2, "combo")}
             <Row className="mt-3">
@@ -82,9 +85,6 @@ function TableContents(props) {
                             id="drink"
                             defaultMessage={""}/>
                     </h3>
-                </Col>
-                <Col xs="1" lg="1" md="1">
-                    <StorieComponent id={props.id} codeDefault={props.codeDefault}/>
                 </Col>
             </Row>
             <span className="sub-title ml-3">

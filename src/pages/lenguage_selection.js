@@ -10,7 +10,7 @@ class LenguageSelection extends Component {
         return (
             <div className="container">
                 <div className="my-4">
-                    <Image src={'/logoReservaloLetter.png'} fluid={true}
+                    <Image src={'/images/reservalo/logoReservaloLetter.png'} fluid={true}
                            style={{width:40, height:40}}
                            className={'logo-image'}
                            onClick={() =>{

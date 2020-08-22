@@ -25,7 +25,7 @@ function DownBarLogos(props) {
                              onClick={() =>{
                                  window.open(props.urls[2], '_blank');}
                              }/>
-            <Image src={'/logoReservaloCircle.png'} fluid={true}
+            <Image src={'/images/reservalo/logoReservaloCircle.png'} fluid={true}
                    className="logo-image-circle"
                    onClick={() =>{
                        window.open('https://www.reservalo.app/', '_blank');}
