@@ -54,6 +54,7 @@ code {
 .circle-image-storie{
   width: 45px;
   height: 45px;
+  margin-top: 5px;
   margin-bottom: 5px;
   padding: 0.5%;
   border-style: solid;

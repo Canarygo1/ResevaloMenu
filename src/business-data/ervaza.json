@@ -24,35 +24,28 @@
       "number": 2
     },
     {
-      "type": "drink.wine",
-      "number": 6
+      "type": "drink",
+      "type-sub": "drink.wine",
+      "number": 6,
+      "subtitle": true
     },
     {
-      "type": "drink.cava",
-      "number": 3
+      "type": "drink",
+      "type-sub": "drink.cava",
+      "number": 3,
+      "subtitle": true
     }
   ],
   "images-urls": [
     {
       "type-1": [
-        "/images/ervaza/c.png",
-        "/images/ervaza/c2.png"
+        "/images/ervaza/ceviche.jpeg",
+        "/images/ervaza/pulpo a la gallega.jpeg",
+        "/images/ervaza/tartarAtun.jpeg"
       ],
       "type-2": [
-        "/images/ervaza/c.png",
-        "/images/ervaza/c2.png"
-      ],
-      "type-3": [
-        "/images/ervaza/c.png",
-        "/images/ervaza/c2.png"
-      ],
-      "type-4": [
-        "/images/ervaza/c.png",
-        "/images/ervaza/c2.png"
-      ],
-      "type-5": [
-        "/images/ervaza/c.png",
-        "/images/ervaza/c2.png"
+        "/images/ervaza/mariscada.jpeg",
+        "/images/ervaza/gambas.jpeg"
       ]
     }
   ]

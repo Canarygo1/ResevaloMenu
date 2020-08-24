@@ -7,21 +7,20 @@ import locale_en from "../translations/ervaza/en.json";
 import {IntlProvider} from "react-intl";
 import Card from "../components/organisms/card";
 import DownBarLogos from "../components/molecules/down-bar-logos";
+import dataBusiness from "../business-data/ervaza.json"
 
 const fileLenguages = [locale_sp, locale_fr, locale_en, locale_it, locale_al];
 const codeLenguage = ["es", "fr", "en", "it", "de"];
 
-class Ervaza extends Component {
+const data = dataBusiness;
 
+class Ervaza extends Component {
     render() {
         let codeDefault = parseInt(this.props.match.params.codeDefault);
         return (<div>
                 <IntlProvider locale={codeLenguage[codeDefault]} messages={fileLenguages[codeDefault]}>
-                    <Card codeDefault={this.props.match.params.codeDefault} id={this.props.match.params.id}/>
-                    <DownBarLogos urls={["https://www.facebook.com/Ervaza-Mariscos-Frescos-1338259009531552",
-                    "https://www.instagram.com/explore/locations/1338259009531552/ervaza-mariscos-frescos/?hl=es",
-                    "https://ervaza.com/"]}/>
-
+                    <Card codeDefault={this.props.match.params.codeDefault} id={this.props.match.params.id} dataBusiness={data}/>
+                    <DownBarLogos urls={data["urls-website"]}/>
                 </IntlProvider>
             </div>
         );
