@@ -10,6 +10,7 @@ StorieComponent.propTypes = {
 };
 
 function StorieComponent(props) {
+
     return (
         <div>
             <Link to={{

@@ -8,7 +8,7 @@ function Card(props) {
     return (
         <div className={"container"}>
             <NavReservalo code={code} id={props.id}/>
-            <TableContents id={props.id} codeDefault={props.codeDefault}/>
+            <TableContents id={props.id} codeDefault={props.codeDefault} dataBusiness={props.dataBusiness}/>
         </div>
     );
 }
@@ -16,6 +16,7 @@ function Card(props) {
 Card.propTypes = {
     codeDefault:PropTypes.string.isRequired,
     id:PropTypes.string.isRequired,
+    dataBusiness:PropTypes.object.isRequired
 };
 
 export default Card;
