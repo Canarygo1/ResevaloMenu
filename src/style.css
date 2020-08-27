@@ -11,15 +11,15 @@ color: 2C2D2F
 --------------------------------------------------------------*/
 .body2 {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  background-color: white;
 
 }
 h1, h2, h3, h4, h5{
-  color: white;
+  color: #2C2D2F;
 }
 
 p{
-  color: white;
+  color: #2C2D2F;
 }
 
 a {
@@ -402,7 +402,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  background: url("../img/hero-bg.jpg");
+  background: url("css-image/hero-bg.jpg");
   position: relative;
   padding: 120px 0 0 0;
 }
@@ -710,7 +710,7 @@ section {
 }
 
 .about .video-box {
-  background: url("../img/about.png") center center no-repeat;
+  background: url("css-image/about.png") center center no-repeat;
   background-size: contain;
   min-height: 300px;
 }
@@ -944,7 +944,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/cta-bg.jpg") no-repeat;
+  background: url("css-image/cta-bg.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;

@@ -4,56 +4,18 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-!(function($) {
-  "use strict";
 
+import jQuery from 'jquery';
+import AOS from 'aos';
+
+// eslint-disable-next-line no-unused-expressions
+!(function($) {
   // Preloader
   $(window).on('load', function() {
     if ($('#preloader').length) {
       $('#preloader').delay(100).fadeOut('slow', function() {
         $(this).remove();
       });
-    }
-  });
-
-  // Smooth scroll for the navigation menu and links with .scrollto classes
-  $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      e.preventDefault();
-      var target = $(this.hash);
-      if (target.length) {
-
-        var scrollto = target.offset().top;
-        var scrolled = 20;
-
-        if ($('#header').length) {
-          scrollto -= $('#header').outerHeight()
-
-          if (!$('#header').hasClass('header-scrolled')) {
-            scrollto += scrolled;
-          }
-        }
-
-        if ($(this).attr("href") == '#header') {
-          scrollto = 0;
-        }
-
-        $('html, body').animate({
-          scrollTop: scrollto
-        }, 1500, 'easeInOutExpo');
-
-        if ($(this).parents('.nav-menu, .mobile-nav').length) {
-          $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-          $(this).closest('li').addClass('active');
-        }
-
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-          $('.mobile-nav-overly').fadeOut();
-        }
-        return false;
-      }
     }
   });
 
@@ -97,11 +59,11 @@
   var main_nav = $('.nav-menu, .mobile-nav');
 
   $(window).on('scroll', function() {
-    var cur_pos = $(this).scrollTop() + 80;
+    var cur_pos = $(this).scrollTop() + 200;
 
     nav_sections.each(function() {
       var top = $(this).offset().top,
-        bottom = top + $(this).outerHeight();
+          bottom = top + $(this).outerHeight();
 
       if (cur_pos >= top && cur_pos <= bottom) {
         if (cur_pos <= bottom) {
@@ -144,36 +106,17 @@
     return false;
   });
 
-  // Initiate the venobox plugin
+  // Init AOS
+  function aos_init() {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false
+    });
+  }
   $(window).on('load', function() {
-    $('.venobox').venobox();
-  });
-
-  // jQuery counterUp
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 1000
-  });
-
-  // Initiate venobox lightbox
-  $(document).ready(function() {
-    $('.venobox').venobox();
-  });
-
-  // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
-
-  // Initi AOS
-  AOS.init({
-    duration: 1000,
-    easing: "ease-in-out",
-    once: true,
-    mirror: false
+    aos_init();
   });
 
 })(jQuery);
