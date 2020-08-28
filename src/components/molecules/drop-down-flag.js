@@ -11,32 +11,32 @@ function DropDownFlag({codeDefault, id}) {
         <div style={{alignSelf:"center"}}>
             <Dropdown className={"dropClass"}>
                 <Dropdown.Toggle id="toggle-drop" variant={"secondary"}>
-                    <span className={`flag-icon flag-icon-${flags[codeDefault]} flag-drop`}></span>
+                    <span className={`flag-icon flag-icon-${flags[codeDefault]} flag-drop`}/>
                 </Dropdown.Toggle>
               <Dropdown.Menu className={"menu-drop"}>
                 <Dropdown.Item id={"item-drop-lenguage"}>
                   <div onClick={() => window.location.replace(`/cartas/${id}/0`)}>
-                      <span className="flag-icon flag-icon-es flag-drop"></span>
+                      <span className="flag-icon flag-icon-es flag-drop"/>
                   </div>
                 </Dropdown.Item>
                 <Dropdown.Item id={"item-drop-lenguage"}>
                   <div onClick={() => window.location.replace(`/cartas/${id}/1`)}>
-                      <span className="flag-icon flag-icon-fr flag-drop"></span>
+                      <span className="flag-icon flag-icon-fr flag-drop"/>
                   </div>
                 </Dropdown.Item>
                 <Dropdown.Item id={"item-drop-lenguage"}>
                   <div onClick={() => window.location.replace(`/cartas/${id}/2`)}>
-                      <span className="flag-icon flag-icon-gb flag-drop"></span>
+                      <span className="flag-icon flag-icon-gb flag-drop"/>
                   </div>
                 </Dropdown.Item>
                 <Dropdown.Item id={"item-drop-lenguage"}>
                   <div onClick={() => window.location.replace(`/cartas/${id}/3`)}>
-                      <span className="flag-icon flag-icon-it flag-drop"></span>
+                      <span className="flag-icon flag-icon-it flag-drop"/>
                   </div>
                 </Dropdown.Item>
                 <Dropdown.Item id={"item-drop-lenguage"}>
                   <div onClick={() => window.location.replace(`/cartas/${id}/4`)}>
-                      <span className="flag-icon flag-icon-de flag-drop"></span>
+                      <span className="flag-icon flag-icon-de flag-drop"/>
                   </div>
                 </Dropdown.Item>
               </Dropdown.Menu>
