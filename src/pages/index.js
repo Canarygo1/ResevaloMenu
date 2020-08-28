@@ -384,11 +384,10 @@ class Index extends Component {
                                     </li>
                                     <li data-aos="fade-up" data-aos-delay={100}>
                                         <i className="bx bx-help-circle icon-help"/> <a data-toggle="collapse"
-                                                                                        href="#faq-list-2"
                                                                                         className="collapsed">¿Cobráis
                                         comisiones por cita/entrada? <i className="bx bx-chevron-down icon-show"/><i
                                             className="bx bx-chevron-up icon-close"/></a>
-                                        <div id="faq-list-2" className="collapse" data-parent=".faq-list">
+                                        <div id="faq-list-2" className="collapse show" data-parent=".faq-list">
                                             <p>
                                                 Actualmente no cobramos comisiones por citas. Por entradas solo se cobra
                                                 el coste de la pasarela de pago (exactamente la establecida por nuestro
@@ -398,12 +397,12 @@ class Index extends Component {
                                     </li>
                                     <li data-aos="fade-up" data-aos-delay={200}>
                                         <i className="bx bx-help-circle icon-help"/> <a data-toggle="collapse"
-                                                                                        href="#faq-list-3"
+
                                                                                         className="collapsed">¿En qué
                                         plataformas está disponible Resérvalo? <i
                                             className="bx bx-chevron-down icon-show"/><i
                                             className="bx bx-chevron-up icon-close"/></a>
-                                        <div id="faq-list-3" className="collapse" data-parent=".faq-list">
+                                        <div id="faq-list-3" className="collapse show" data-parent=".faq-list">
                                             <p>
                                                 Resérvalo está disponible en las principales plataformas móviles:
                                                 Android e IOS. Abarcando así toda la cuota de mercado móvil.
@@ -412,12 +411,12 @@ class Index extends Component {
                                     </li>
                                     <li data-aos="fade-up" data-aos-delay={200}>
                                         <i className="bx bx-help-circle icon-help"/> <a data-toggle="collapse"
-                                                                                        href="#faq-list-3"
+
                                                                                         className="collapsed">¿Contáis
                                         con aplicación para empleados y jefes? <i
                                             className="bx bx-chevron-down icon-show"/><i
                                             className="bx bx-chevron-up icon-close"/></a>
-                                        <div id="faq-list-3" className="collapse" data-parent=".faq-list">
+                                        <div id="faq-list-3" className="collapse show" data-parent=".faq-list">
                                             <p>
                                                 El jefe y el empleado tienen su propia aplicación desde la que pueden
                                                 asignar horarios, consultarlos y cancelar citas.

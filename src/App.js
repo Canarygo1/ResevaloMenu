@@ -1,6 +1,6 @@
 import React from "react";
 import { createBrowserHistory } from "history";
-import {Router, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import LenguageSelection from "./pages/lenguage_selection";
 import Ervaza from "./pages/ervaza";
 import stories from "./pages/stories-screen";
