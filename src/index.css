@@ -13,6 +13,7 @@ code {
   monospace;
 }
 #toggle-drop{
+  padding-right: 5%;
   background-color: #121318;
 }
 
@@ -38,8 +39,10 @@ code {
   width: 100%;
   height: 100%;
 }
+
 #item-drop-lenguage:hover{
   background-color: #E6565A !important;
+  justify-content: center;
 }
 #item-drop-lenguage:active{
   background-color: #E6565A !important;
@@ -47,9 +50,18 @@ code {
 .menu-drop{
   background-color: #121318 !important;
 }
-.flags-styles{
-  width: 80%;
-  height: 80% !important;
+
+.flag-drop{
+  margin-right: 20% !important;
+  background-position: left !important;
+}
+
+.flag-icon{
+  background-size: contain !important;
+  background-position: 100%;
+  width: 100% !important;
+  height: 500% !important;
+  background-repeat: no-repeat !important;
 }
 .circle-image-storie{
   width: 45px;
