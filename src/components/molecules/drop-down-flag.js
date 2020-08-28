@@ -3,7 +3,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import PropTypes from "prop-types";
 import 'flag-icon-css/css/flag-icon.css';
 
-//const flags = ["es","fr","gb","it","de"];
+const flags = ["es","fr","gb","it","de"];
 
 function DropDownFlag({codeDefault, id}) {
 
@@ -11,7 +11,7 @@ function DropDownFlag({codeDefault, id}) {
         <div style={{alignSelf:"center"}}>
             <Dropdown className={"dropClass"}>
                 <Dropdown.Toggle id="toggle-drop" variant={"secondary"}>
-                    <span className="flag-icon flag-icon-es"></span>
+                    <span className={`flag-icon flag-icon-${flags[codeDefault]} flag-drop`}></span>
                 </Dropdown.Toggle>
               <Dropdown.Menu className={"menu-drop"}>
                 <Dropdown.Item id={"item-drop-lenguage"}>
