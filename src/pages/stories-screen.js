@@ -45,23 +45,28 @@ class StoriesScreen extends Component {
             return objectStories;
         }
 
-        if (window.innerWidth > 800) {
+        if (window.innerWidth > 750) {
+            let pictures = createPicturesToPC();
             return (
                 <div className="container mt-2">
-                    <ImageGallery items={createPicturesToPC()} showBullets={true} autoPlay={true}/>;
+                    <ImageGallery items={pictures} showBullets={true} autoPlay={true}/>
+                    <div className="close-stories-pc" onClick={() => this.props.history.goBack()}>
+                        <FontAwesomeIcon icon={faTimes} className={"close-icon-pc"} size="2x" />
+                    </div>
                 </div>
             );
         } else {
+            let pictures = createPicturesToMobile();
             return (
                 <div>
                     <Stories
-                        stories={createPicturesToMobile()}
+                        stories={pictures}
                         defaultInterval={2500}
                         width={window.innerWidth}
                         height={window.innerHeight}
                     />
-                    <div className="close-stories" onClick={() => this.props.history.goBack()}>
-                        <FontAwesomeIcon icon={faTimes} className={"close-icon"}/>
+                    <div className="close-stories-mobile" onClick={() => this.props.history.goBack()}>
+                        <FontAwesomeIcon icon={faTimes} className={"close-icon-mobile"}/>
                     </div>
                 </div>
             );

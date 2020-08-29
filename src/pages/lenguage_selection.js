@@ -18,25 +18,33 @@ class LenguageSelection extends Component {
                            }
                     />
                 </div>
-                <Col>
                     <Row className="justify-content-center" sm={1} lg={5} md={5} xl={5} xs={1}>
-                        <Link to={`/cartas/${this.props.match.params.id}/0`} className="my-3">
-                            <span className="flag-icon flag-icon-es"></span>
-                        </Link>
-                        <Link to={`/cartas/${this.props.match.params.id}/1`} className="my-3">
-                            <span className="flag-icon flag-icon-fr"></span>
-                        </Link>
-                        <Link to={`/cartas/${this.props.match.params.id}/2`} className="my-3">
-                            <span className="flag-icon flag-icon-gb"></span>
-                        </Link>
-                        <Link to={`/cartas/${this.props.match.params.id}/3`} className="my-3">
-                            <span className="flag-icon flag-icon-it"></span>
-                        </Link>
-                        <Link to={`/cartas/${this.props.match.params.id}/4`} className="my-3">
-                            <span className="flag-icon flag-icon-de"></span>
-                        </Link>
+                        <Col className="my-5">
+                            <Link to={`/cartas/${this.props.match.params.id}/0`}>
+                                <span className="flag-icon flag-icon-es"></span>
+                            </Link>
+                        </Col>
+                        <Col className="my-5">
+                            <Link to={`/cartas/${this.props.match.params.id}/1`}>
+                                <span className="flag-icon flag-icon-fr"></span>
+                            </Link>
+                        </Col>
+                        <Col className="my-5">
+                            <Link to={`/cartas/${this.props.match.params.id}/2`}>
+                                <span className="flag-icon flag-icon-gb"></span>
+                            </Link>
+                        </Col>
+                        <Col className="my-5">
+                            <Link to={`/cartas/${this.props.match.params.id}/3`}>
+                                <span className="flag-icon flag-icon-it"></span>
+                            </Link>
+                        </Col>
+                        <Col className="my-5">
+                            <Link to={`/cartas/${this.props.match.params.id}/4`}>
+                                <span className="flag-icon flag-icon-de"></span>
+                            </Link>
+                        </Col>
                     </Row>
-                </Col>
             </div>
         );
     }

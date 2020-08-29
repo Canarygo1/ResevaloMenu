@@ -13,7 +13,7 @@ code {
   monospace;
 }
 #toggle-drop{
-  padding-right: 5%;
+  padding-right: 25px;
   background-color: #121318;
 }
 
@@ -53,14 +53,16 @@ code {
 
 .flag-drop{
   margin-right: 20% !important;
+  margin-bottom: 0% !important;
   background-position: left !important;
 }
 
 .flag-icon{
+  margin-bottom: 20%;
   background-size: contain !important;
-  background-position: 100%;
+  background-position: center;
   width: 100% !important;
-  height: 500% !important;
+  height: 150% !important;
   background-repeat: no-repeat !important;
 }
 .circle-image-storie{
@@ -73,12 +75,29 @@ code {
   border-width: 1.5px;
   border-color: #0090FF;
 }
-.close-icon{
+.close-icon-pc{
+  color: #2C2D2F;
+  margin-top: 17%;
+
+}
+.close-stories-pc{
+  text-align: center;
+  background-color: white;
+  border-radius: 90%;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 3%;
+  float: right;
+  right: 3%;
+  z-index: 1000;
+}
+.close-icon-mobile{
   color: white;
   margin-left: 32%;
   margin-top: 22%;
 }
-.close-stories{
+.close-stories-mobile{
   background-color: #2C2D2F;
   border-radius: 90%;
   position: absolute;
