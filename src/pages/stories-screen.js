@@ -12,7 +12,6 @@ class StoriesScreen extends Component {
     constructor(props, context) {
         super(props, context);
         imagesUrls = props.location.state.imagesUrls
-        console.log(imagesUrls)
     }
 
     render() {
