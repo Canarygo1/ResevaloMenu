@@ -48,5 +48,15 @@
         "/images/ervaza/gambas.jpeg"
       ]
     }
+  ],
+  "images-preview": [
+    {
+      "type-1": [
+        "/images/ervaza/ceviche.jpeg"
+      ],
+      "type-2": [
+        "/images/ervaza/mariscada.jpeg"
+      ]
+    }
   ]
 }
