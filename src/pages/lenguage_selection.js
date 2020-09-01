@@ -4,19 +4,14 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import {Link} from "react-router-dom";
 import 'flag-icon-css/css/flag-icon.css';
+import NavReservalo from "../components/organisms/nav-reservalo";
 
 class LenguageSelection extends Component {
     render() {
         return (
             <div className="container">
                 <div className="my-4">
-                    <Image src={'/images/reservalo/logoReservaloLetter.png'} fluid={true}
-                           style={{width:40, height:40}}
-                           className={'logo-image'}
-                           onClick={() =>{
-                               window.open('https://www.reservalo.app/', '_blank');}
-                           }
-                    />
+                    <NavReservalo multiLenguage={false}/>
                 </div>
                     <Row className="justify-content-center" sm={1} lg={5} md={5} xl={5} xs={1}>
                         <Col className="my-5">

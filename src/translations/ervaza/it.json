@@ -6,6 +6,7 @@
   "started.4": "Molluschi",
   "started.5": "Cozze",
   "started.6": "Gamberi all'aglio",
+
   "plate": "Principale",
   "plate.1": "Zamburiñas",
   "plate.2": "Pettini",
@@ -16,9 +17,11 @@
   "plate.7": "Carabinieri",
   "plate.8": "Gamberi rossi",
   "plate.9": "Gamberetti bianchi",
+
   "combo": "Menu",
   "combo.1": "Gamberi ERVAZA",
   "combo.2": "Mariscada speciale ERVAZA",
+
   "drink": "Bevande",
   "drink.wine": "Vini",
   "drink.cava": "Spumantes",
@@ -31,12 +34,14 @@
   "drink.cava.1": "Coppa delle rose",
   "drink.cava.2": "Bottiglia di rose",
   "drink.cava.3": "Bottiglia di canarino",
+
   "started.price.1": "8€",
   "started.price.2": "10€",
   "started.price.3": "12€",
   "started.price.4": "12€",
   "started.price.5": "9€",
   "started.price.6": "12€",
+
   "plate.price.1": "12€",
   "plate.price.2": "12€",
   "plate.price.3": "3€",
@@ -46,8 +51,10 @@
   "plate.price.7": "P/P",
   "plate.price.8": "15€",
   "plate.price.9": "15€",
+
   "combo.price.1": "37€",
   "combo.price.2": "64€",
+
   "drink.wine.price.1": "2,5€",
   "drink.wine.price.2": "2,5€",
   "drink.wine.price.3": "2,9€",

@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+import PropTypes, {element} from "prop-types";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {FormattedMessage} from "react-intl";
@@ -16,9 +16,9 @@ function TableContents(props) {
     function createRowWithPrice(number, element) {
         let elementRows = [];
         let elementData = ''
-        if(element["subtitle"] === true){
+        if (element["subtitle"] === true) {
             elementData = element['type-sub']
-        }else{
+        } else {
             elementData = element['type']
         }
         for (let i = 1; i <= number; i++) {
@@ -41,8 +41,8 @@ function TableContents(props) {
         return elementRows;
     }
 
-    function createSubtitle(isSubtitle, subtitle){
-        if(isSubtitle === true){
+    function createSubtitle(isSubtitle, subtitle) {
+        if (isSubtitle === true) {
             return <span className="sub-title ml-3">
                 <FormattedMessage
                     id={subtitle}
@@ -51,10 +51,23 @@ function TableContents(props) {
         }
     }
 
-    function createImages(imagesUrls){
-        if(typeof imagesUrls != 'undefined'){
-            return <StorieComponent id={props.id} codeDefault={props.codeDefault} imagesUrls={imagesUrls}/>
+    function createImages(imagesUrls, imagePreview) {
+        let correct = false;
+        if (window.innerWidth > 750 && typeof imagesUrls != 'undefined') {
+            console.log(imagesUrls);
+            for (let i = 0; i < imagesUrls.length; i++) {
+                if (imagesUrls[i].includes('.jpeg')) {
+                    correct = true;
+                    break
+                }
+            }
         }else{
+            correct = true;
+        }
+        if (typeof imagesUrls != 'undefined' && correct === true) {
+            return <StorieComponent id={props.id} codeDefault={props.codeDefault} imagesUrls={imagesUrls}
+                                    imagePreview={imagePreview}/>
+        } else {
             return <div></div>
         }
     }
@@ -73,7 +86,7 @@ function TableContents(props) {
                             </h3>
                         </Col>
                         <Col xs="1" lg="1" md="1">
-                            {createImages(props.dataBusiness["images-urls"][0][`type-${i + 1}`])}
+                            {createImages(props.dataBusiness["images-urls"][0][`type-${i + 1}`], props.dataBusiness["images-preview"][0][`type-${i + 1}`])}
                         </Col>
                     </Row>
                     {createSubtitle(props.dataBusiness["product-types"][i]["subtitle"], props.dataBusiness["product-types"][i]["type-sub"])}

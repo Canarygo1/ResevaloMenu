@@ -6,7 +6,8 @@ import {Link} from "react-router-dom";
 StorieComponent.propTypes = {
     id:PropTypes.string.isRequired,
     codeDefault:PropTypes.string.isRequired,
-    imagesUrls:PropTypes.array.isRequired
+    imagesUrls:PropTypes.array.isRequired,
+    imagePreview:PropTypes.string.isRequired
 };
 
 function StorieComponent(props) {
@@ -19,7 +20,7 @@ function StorieComponent(props) {
                     imagesUrls: props.imagesUrls
                 }
             }}>
-                <Image className="rounded-circle circle-image-storie" src={props.imagesUrls[0]}/>
+                <Image className="rounded-circle circle-image-storie" src={props.imagePreview}/>
             </Link>
         </div>
     );

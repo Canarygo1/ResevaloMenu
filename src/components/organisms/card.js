@@ -7,7 +7,7 @@ function Card(props) {
     let code = parseInt(props.codeDefault);
     return (
         <div className={"container"}>
-            <NavReservalo code={code} id={props.id}/>
+            <NavReservalo code={code} id={props.id} multiLenguage={props.multiLenguage}/>
             <TableContents id={props.id} codeDefault={props.codeDefault} dataBusiness={props.dataBusiness}/>
         </div>
     );
@@ -16,7 +16,8 @@ function Card(props) {
 Card.propTypes = {
     codeDefault:PropTypes.string.isRequired,
     id:PropTypes.string.isRequired,
-    dataBusiness:PropTypes.object.isRequired
+    dataBusiness:PropTypes.object.isRequired,
+    multiLenguage:PropTypes.bool.isRequired,
 };
 
 export default Card;

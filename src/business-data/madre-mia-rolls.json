@@ -1,0 +1,80 @@
+{
+  "urls-website": [
+    {
+      "facebook-url": "https://www.facebook.com/pages/category/Dessert-Shop/Madre-Mia-Rolls-110656683947216/"
+    },
+    {
+      "instagram-url": "https://www.instagram.com/madremiarolls/"
+    },
+    {
+      "web-url": ""
+    }
+  ],
+  "product-types": [
+    {
+      "type": "Rolls",
+      "number": 12
+    },
+    {
+      "type": "Rollos",
+      "number": 4
+    },
+    {
+      "type": "Rulos",
+      "number": 2
+    },
+    {
+      "type": "Otros",
+      "number": 2
+    },
+    {
+      "type": "Granizados",
+      "number": 4
+    }
+  ],
+  "images-urls": [
+    {
+      "type-1": [
+        "/images/madre-mia-rolls/Rolls.mp4",
+        "/images/madre-mia-rolls/Rolls0.mp4",
+        "/images/madre-mia-rolls/Rolls1.mp4",
+        "/images/madre-mia-rolls/Rolls2.mp4",
+        "/images/madre-mia-rolls/Rolls3.jpeg"
+      ],
+      "type-2": [
+        "/images/madre-mia-rolls/Rollo1.jpeg",
+        "/images/madre-mia-rolls/Rollo2.mp4",
+        "/images/madre-mia-rolls/Rollo3.jpeg"
+      ],
+      "type-3": [
+        "/images/madre-mia-rolls/Rulo1.jpeg",
+        "/images/madre-mia-rolls/Rulo2.mp4"
+      ],
+      "type-4": [
+        "/images/madre-mia-rolls/Otros.mp4",
+        "/images/madre-mia-rolls/Otros1.mp4",
+        "/images/madre-mia-rolls/Otros2.mp4",
+        "/images/madre-mia-rolls/Otros3.mp4",
+        "/images/madre-mia-rolls/Otros4.mp4",
+        "/images/madre-mia-rolls/Otros5.mp4",
+        "/images/madre-mia-rolls/Otros6.mp4"
+      ]
+    }
+  ],
+  "images-preview": [
+    {
+      "type-1": [
+        "/images/madre-mia-rolls/Rolls.jpeg"
+      ],
+      "type-2": [
+        "/images/madre-mia-rolls/Rollo1.jpeg"
+      ],
+      "type-3": [
+        "/images/madre-mia-rolls/Rulo1.jpeg"
+      ],
+      "type-4": [
+        "/images/madre-mia-rolls/Otros.jpeg"
+      ]
+    }
+  ]
+}
