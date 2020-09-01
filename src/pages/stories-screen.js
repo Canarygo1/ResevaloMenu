@@ -18,15 +18,21 @@ class StoriesScreen extends Component {
         function createPicturesToMobile() {
             let objectStories = [];
             imagesUrls.forEach((element) => {
-                objectStories.push(
-                    {
-                        content: props => {
-                            return <div>
-                                <Image className="w-100 h-100" src={element}/>
-                            </div>
+
+                if(element.includes(".mp4") === true){
+                    objectStories.push({ url: {element}, type: 'video' },
+                    );
+                }else{
+                    objectStories.push(
+                        {
+                            content: props => {
+                                return <div>
+                                    <Image className="w-100 h-100" src={element}/>
+                                </div>
+                            },
                         }
-                    }
-                );
+                    );
+                }
             })
             return objectStories;
         }

@@ -34,6 +34,37 @@
   ],
   "images-urls": [
     {
+      "type-1": [
+        "/images/madre-mia-rolls/Rolls.jpeg",
+        "/images/madre-mia-rolls/Rolls0.jpeg",
+        "/images/madre-mia-rolls/Rolls1.jpeg",
+        "/images/madre-mia-rolls/Rolls2.jpeg",
+        "/images/madre-mia-rolls/Rolls3.jpeg",
+        "/images/madre-mia-rolls/Rolls4.jpeg",
+        "/images/madre-mia-rolls/Rolls5.jpeg",
+        "/images/madre-mia-rolls/Rolls6.jpeg",
+        "/images/madre-mia-rolls/Rolls7.jpeg",
+        "/images/madre-mia-rolls/Rolls8.jpeg",
+        "/images/madre-mia-rolls/Rolls9.jpeg",
+        "/images/madre-mia-rolls/Rolls10.jpeg"
+      ],
+      "type-2": [
+        "/images/madre-mia-rolls/Rollo1.jpeg",
+        "/images/madre-mia-rolls/Rollo2.jpeg",
+        "/images/madre-mia-rolls/Rollo3.jpeg"
+      ],
+      "type-3": [
+        "/images/madre-mia-rolls/Rulo1.jpeg",
+        "/images/madre-mia-rolls/Rulo2.jpeg"
+      ],
+      "type-4": [
+        "/images/madre-mia-rolls/Otros.jpeg",
+        "/images/madre-mia-rolls/Otros1.jpeg",
+        "/images/madre-mia-rolls/Otros2.jpeg",
+        "/images/madre-mia-rolls/Otros3.jpeg",
+        "/images/madre-mia-rolls/Otros4.jpeg",
+        "/images/madre-mia-rolls/Otros5.jpeg"
+      ]
     }
   ]
 }
