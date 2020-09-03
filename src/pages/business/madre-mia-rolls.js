@@ -5,6 +5,7 @@ import Card from "../../components/organisms/card";
 import DownBarLogos from "../../components/molecules/down-bar-logos";
 import dataBusiness from "../../business-data/madre-mia-rolls.json"
 import PropTypes from "prop-types";
+import Business from "../../business";
 
 const fileLenguages = [locale_sp];
 const codeLenguage = ["es"];
@@ -12,6 +13,12 @@ const codeLenguage = ["es"];
 const data = dataBusiness;
 
 class MadreMiaRolls extends Component {
+
+    constructor(props, context) {
+        super(props, context);
+        let data = Business(props.properties.match.params.id)
+        document.body.style.backgroundColor = data.colors[0]['body']
+    }
 
     render() {
         let codeDefault = parseInt(this.props.properties.match.params.codeDefault);

@@ -9,6 +9,7 @@ import Card from "../../components/organisms/card";
 import DownBarLogos from "../../components/molecules/down-bar-logos";
 import dataBusiness from "../../business-data/ervaza.json"
 import PropTypes from "prop-types";
+import Business from "../../business";
 
 const fileLenguages = [locale_sp, locale_fr, locale_en, locale_it, locale_al];
 const codeLenguage = ["es", "fr", "en", "it", "de"];
@@ -16,6 +17,12 @@ const codeLenguage = ["es", "fr", "en", "it", "de"];
 const data = dataBusiness;
 
 class Ervaza extends Component {
+
+    constructor(props, context) {
+        super(props, context);
+        let data = Business(props.properties.match.params.id)
+        document.body.style.backgroundColor = data.colors[0]['body']
+    }
 
     render() {
         let codeDefault = parseInt(this.props.properties.match.params.codeDefault);

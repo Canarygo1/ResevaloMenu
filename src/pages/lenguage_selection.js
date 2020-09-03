@@ -8,11 +8,10 @@ import Business from "../business";
 
 class LenguageSelection extends Component {
 
-
     constructor(props, context) {
         super(props, context);
         let data = Business(this.props.match.params.id)
-        document.body.style.backgroundColor = data.colors[0]
+        document.body.style.backgroundColor = data.colors[0]['body']
     }
 
     render() {

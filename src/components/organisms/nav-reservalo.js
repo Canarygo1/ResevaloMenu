@@ -24,21 +24,21 @@ function controlMultiLenguage(props) {
 function multiLogo(props) {
     try {
         let image = require("./../../../public/images/" + props.id + "/logo.png")
-        return <Col className="text-lg-left text-sm-center text-md-left text-xl-left text-center mb-sm-2 mb-2">
-            <Row className='justify-content-around'>
+        return <Col>
+            <div className='text-md-left text-center'>
                 <Image src={'/images/reservalo/logoReservaloLetter.png'} fluid={true}
                        style={{width: 40, height: 40}}
-                       className={'logo-image'}
+                       className='logo-image mx-md-2 mx-5'
                        onClick={() => {
                            window.open('https://www.reservalo.app/', '_blank');
                        }
                        }
                 />
                 <img src={`/images/${props.id}/logo.png`}
-                       style={{width: 40, height: 40}}
-                       className={'logo-image'}
+                     style={{width: 40, height: 40}}
+                     className={'logo-image mx-md-2 mx-5'}
                 />
-            </Row>
+            </div>
         </Col>;
     } catch (e) {
         console.log('adios')
@@ -59,7 +59,7 @@ function multiLogo(props) {
 function NavReservalo(props) {
     return (
         <div>
-            <Row className="my-4 w-100" sm={1} lg={2} md={2} xl={2} xs={1}>
+            <Row className="my-4 justify-content-md-left" sm={1} lg={2} md={2} xl={2} xs={1}>
                 {multiLogo(props)}
                 {controlMultiLenguage(props)}
             </Row>

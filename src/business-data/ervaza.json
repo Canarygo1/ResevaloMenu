@@ -60,9 +60,11 @@
     }
   ],
   "colors": [
-    "#2C2D2F",
-    "#E6565A",
-    "#E6565A",
-    "#0090FF"
+    {
+      "body": "#2C2D2F",
+      "subtitle": "#E6565A",
+      "price-text": "#E6565A",
+      "title-text": "#0090FF"
+    }
   ]
 }

@@ -78,9 +78,11 @@
     }
   ],
   "colors": [
-    "black",
-    "#E6565A",
-    "#E6565A",
-    "#F2EDE7"
+    {
+      "body": "black",
+      "subtitle": "#E6565A",
+      "price-text": "#E6565A",
+      "title-text": "#EBC288"
+    }
   ]
 }

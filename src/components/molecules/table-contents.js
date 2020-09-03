@@ -33,7 +33,7 @@ function TableContents(props) {
                         </span>
                     </Col>
                     <Col xs="1" lg="1" md="1">
-                        <span className={"price-card"} style={{color: `${data.colors[2]}`}}>
+                        <span className={"price-card"} style={{color: `${data.colors[0]['price-text']}`}}>
                             <FormattedMessage id={`${elementData}.price.${i}`}
                                               defaultMessage={""}/>
                         </span>
@@ -46,7 +46,7 @@ function TableContents(props) {
 
     function createSubtitle(isSubtitle, subtitle) {
         if (isSubtitle === true) {
-            return <span className="sub-title ml-3" style={{color: `${data.colors[1]}`}}>
+            return <span className="sub-title ml-3" style={{color: `${data.colors[0]['subtitle']}`}}>
                 <FormattedMessage
                     id={subtitle}
                     defaultMessage={""}/>
@@ -69,8 +69,6 @@ function TableContents(props) {
         if (typeof imagesUrls != 'undefined' && correct === true) {
             return <StorieComponent id={props.id} codeDefault={props.codeDefault} imagesUrls={imagesUrls}
                                     imagePreview={imagePreview}/>
-        } else {
-            return <div></div>
         }
     }
 
@@ -82,7 +80,7 @@ function TableContents(props) {
                 <div>
                     <Row className={padding}>
                         <Col xs="8" lg="8" md="8" className="ml-2">
-                            <h3 className="title" style={{color: `${data.colors[3]}`}}>
+                            <h3 className="title" style={{color: `${data.colors[0]['title-text']}`}}>
                                 <FormattedMessage
                                     id={props.dataBusiness["product-types"][i]["type"]}
                                     defaultMessage={""}/>
