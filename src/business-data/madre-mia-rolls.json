@@ -13,11 +13,11 @@
   "product-types": [
     {
       "type": "Rolls",
-      "number": 12
+      "number": 13
     },
     {
       "type": "Rollos",
-      "number": 4
+      "number": 5
     },
     {
       "type": "Rulos",
@@ -29,52 +29,58 @@
     },
     {
       "type": "Granizados",
-      "number": 4
+      "number": 3
     }
   ],
   "images-urls": [
     {
       "type-1": [
-        "/images/madre-mia-rolls/Rolls.mp4",
-        "/images/madre-mia-rolls/Rolls0.mp4",
-        "/images/madre-mia-rolls/Rolls1.mp4",
-        "/images/madre-mia-rolls/Rolls2.mp4",
-        "/images/madre-mia-rolls/Rolls3.jpeg"
+        "/images/madremiarolls/Rolls.mp4",
+        "/images/madremiarolls/Rolls0.mp4",
+        "/images/madremiarolls/Rolls1.mp4",
+        "/images/madremiarolls/Rolls2.mp4",
+        "/images/madremiarolls/Rolls3.jpeg"
       ],
       "type-2": [
-        "/images/madre-mia-rolls/Rollo1.jpeg",
-        "/images/madre-mia-rolls/Rollo2.mp4",
-        "/images/madre-mia-rolls/Rollo3.jpeg"
+        "/images/madremiarolls/Rollo1.jpeg",
+        "/images/madremiarolls/Rollo2.mp4",
+        "/images/madremiarolls/Rollo3.jpeg"
       ],
       "type-3": [
-        "/images/madre-mia-rolls/Rulo1.jpeg",
-        "/images/madre-mia-rolls/Rulo2.mp4"
+        "/images/madremiarolls/Rulo1.jpeg",
+        "/images/madremiarolls/Rulo2.mp4"
       ],
       "type-4": [
-        "/images/madre-mia-rolls/Otros.mp4",
-        "/images/madre-mia-rolls/Otros1.mp4",
-        "/images/madre-mia-rolls/Otros2.mp4",
-        "/images/madre-mia-rolls/Otros3.mp4",
-        "/images/madre-mia-rolls/Otros4.mp4",
-        "/images/madre-mia-rolls/Otros5.mp4",
-        "/images/madre-mia-rolls/Otros6.mp4"
+        "/images/madremiarolls/Otros.mp4",
+        "/images/madremiarolls/Otros1.mp4",
+        "/images/madremiarolls/Otros2.mp4",
+        "/images/madremiarolls/Otros3.mp4",
+        "/images/madremiarolls/Otros4.mp4",
+        "/images/madremiarolls/Otros5.mp4",
+        "/images/madremiarolls/Otros6.mp4"
       ]
     }
   ],
   "images-preview": [
     {
       "type-1": [
-        "/images/madre-mia-rolls/Rolls.jpeg"
+        "/images/madremiarolls/Rolls.jpeg"
       ],
       "type-2": [
-        "/images/madre-mia-rolls/Rollo1.jpeg"
+        "/images/madremiarolls/Rollo1.jpeg"
       ],
       "type-3": [
-        "/images/madre-mia-rolls/Rulo1.jpeg"
+        "/images/madremiarolls/Rulo1.jpeg"
       ],
       "type-4": [
-        "/images/madre-mia-rolls/Otros.jpeg"
+        "/images/madremiarolls/Otros.jpeg"
       ]
     }
+  ],
+  "colors": [
+    "black",
+    "#E6565A",
+    "#E6565A",
+    "#F2EDE7"
   ]
 }

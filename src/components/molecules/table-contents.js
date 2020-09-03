@@ -1,9 +1,10 @@
 import React from "react";
-import PropTypes, {element} from "prop-types";
+import PropTypes from "prop-types";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {FormattedMessage} from "react-intl";
 import StorieComponent from "../atoms/stories-component";
+import Business from "../../business";
 
 TableContents.propTypes = {
     id: PropTypes.string.isRequired,
@@ -12,6 +13,8 @@ TableContents.propTypes = {
 };
 
 function TableContents(props) {
+
+    let data = Business(props.id)
 
     function createRowWithPrice(number, element) {
         let elementRows = [];
@@ -30,7 +33,7 @@ function TableContents(props) {
                         </span>
                     </Col>
                     <Col xs="1" lg="1" md="1">
-                        <span className={"price-card"}>
+                        <span className={"price-card"} style={{color: `${data.colors[2]}`}}>
                             <FormattedMessage id={`${elementData}.price.${i}`}
                                               defaultMessage={""}/>
                         </span>
@@ -43,7 +46,7 @@ function TableContents(props) {
 
     function createSubtitle(isSubtitle, subtitle) {
         if (isSubtitle === true) {
-            return <span className="sub-title ml-3">
+            return <span className="sub-title ml-3" style={{color: `${data.colors[1]}`}}>
                 <FormattedMessage
                     id={subtitle}
                     defaultMessage={""}/>
@@ -54,7 +57,6 @@ function TableContents(props) {
     function createImages(imagesUrls, imagePreview) {
         let correct = false;
         if (window.innerWidth > 750 && typeof imagesUrls != 'undefined') {
-            console.log(imagesUrls);
             for (let i = 0; i < imagesUrls.length; i++) {
                 if (imagesUrls[i].includes('.jpeg')) {
                     correct = true;
@@ -75,11 +77,12 @@ function TableContents(props) {
     function createData() {
         let elements = []
         for (let i = 0; i < props.dataBusiness["product-types"].length; i++) {
+            let padding = i === 0 ? 'pt-2' : 'pt-4'
             elements.push(
                 <div>
-                    <Row>
+                    <Row className={padding}>
                         <Col xs="8" lg="8" md="8" className="ml-2">
-                            <h3 className="title">
+                            <h3 className="title" style={{color: `${data.colors[3]}`}}>
                                 <FormattedMessage
                                     id={props.dataBusiness["product-types"][i]["type"]}
                                     defaultMessage={""}/>

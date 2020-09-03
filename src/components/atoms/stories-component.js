@@ -7,7 +7,7 @@ StorieComponent.propTypes = {
     id:PropTypes.string.isRequired,
     codeDefault:PropTypes.string.isRequired,
     imagesUrls:PropTypes.array.isRequired,
-    imagePreview:PropTypes.string.isRequired
+    imagePreview:PropTypes.array.isRequired
 };
 
 function StorieComponent(props) {

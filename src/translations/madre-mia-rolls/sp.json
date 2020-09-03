@@ -1,5 +1,5 @@
 {
-  "Rolls": "Rolls",
+  "Rolls": "Rolls cinnamon",
   "Rolls.1": "Cinnamon espolvoreado",
   "Rolls.2": "Glaseado",
   "Rolls.3": "Dulce de leche",
@@ -12,18 +12,20 @@
   "Rolls.10": "Pack surtido de minis",
   "Rolls.11": "Chocolate plátano y nueces",
   "Rolls.12": "Guayaba queso fresco",
+  "Rolls.13": "Extras",
 
-  "Rollos": "Rollos",
-  "Rollos.1": "Rollo jamón baicon queso crema",
-  "Rollos.2": "Rollo chorizo queso amarillo queso crema",
-  "Rollos.3": "Rollo jamón baicon aceitunas y pasas",
-  "Rollos.4": "Rollo canela mata la uva queso con topping queso fresco",
-  
+  "Rollos": "Rolls salados",
+  "Rollos.1": "Roll jamón baicon queso crema",
+  "Rollos.2": "Roll chorizo queso amarillo queso crema",
+  "Rollos.3": "Roll jamón baicon aceitunas y pasas",
+  "Rollos.4": "Roll canela mata la uva queso con topping queso fresco",
+  "Rollos.5": "Extras",
+
   "Rulos": "Rulos",
   "Rulos.1": "Rulo frankfurt con baicon topping sésamo",
   "Rulos.2": "Rulo chorizo canario queso fresco topping pimentón molido",
 
-  "Otros": "Otros",
+  "Otros": "Otros rolls",
   "Otros.1": "Golfeados",
   "Otros.2": "Quesadilla",
 
@@ -31,7 +33,6 @@
   "Granizados.1": "Granizado",
   "Granizados.2": "Cocada",
   "Granizados.3": "Mocaccino",
-  "Granizados.4": "Extras",
 
   "Rolls.price.1": "2€",
   "Rolls.price.2": "2€",
@@ -45,11 +46,13 @@
   "Rolls.price.10": "3€",
   "Rolls.price.11": "2,5€",
   "Rolls.price.12": "2,5€",
+  "Rolls.price.13": "0,5€/ud.",
 
   "Rollos.price.1": "2€",
   "Rollos.price.2": "2€",
   "Rollos.price.3": "2,5€",
   "Rollos.price.4": "2,5€",
+  "Rollos.price.5": "0,5€/ud.",
 
   "Rulos.price.1": "2€",
   "Rulos.price.2": "2€",
@@ -59,6 +62,5 @@
 
   "Granizados.price.1": "1,5€",
   "Granizados.price.2": "1,8€",
-  "Granizados.price.3": "1,8€",
-  "Granizados.price.4": "0,5€/ud."
+  "Granizados.price.3": "1,8€"
 }

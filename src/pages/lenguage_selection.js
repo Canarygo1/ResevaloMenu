@@ -1,12 +1,20 @@
 import React, {Component} from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
 import {Link} from "react-router-dom";
 import 'flag-icon-css/css/flag-icon.css';
 import NavReservalo from "../components/organisms/nav-reservalo";
+import Business from "../business";
 
 class LenguageSelection extends Component {
+
+
+    constructor(props, context) {
+        super(props, context);
+        let data = Business(this.props.match.params.id)
+        document.body.style.backgroundColor = data.colors[0]
+    }
+
     render() {
         return (
             <div className="container">
