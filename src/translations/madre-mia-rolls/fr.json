@@ -1,0 +1,66 @@
+{
+  "Rolls": "Brioches",
+  "Rolls.1": "Cannelle saupoudrée",
+  "Rolls.2": "glaçage",
+  "Rolls.3": "Caramel",
+  "Rolls.4": "Caramel et noix de coco",
+  "Rolls.5": "Oreo",
+  "Rolls.6": "Nutella",
+  "Rolls.7": "Kinder",
+  "Rolls.8": "strudel aux pommes",
+  "Rolls.9": "Cheesecake aux fraises",
+  "Rolls.10": "Pack de minis assortis",
+  "Rolls.11": "Chocolat, banane et noix",
+  "Rolls.12": "Goyave et fromage à la crème",
+  "Rolls.13": "Caractéristiques supplémentaires",
+
+  "Rollos": "Petits pains salés",
+  "Rollos.1": "Rouleau de jambon, bacon et fromage à la crème",
+  "Rollos.2": "Rouleau de chorizo, fromage jaune et fromage à la crème",
+  "Rollos.3": "Rouleau de jambon, baicon, olives et raisins secs",
+  "Rollos.4": "Rouleau de cannelle, tuer les raisins et le fromage avec une garniture au fromage à la crème",
+  "Rollos.5": "Caractéristiques supplémentaires",
+
+  "Rulos": "Bigoudis",
+  "Rulos.1": "Saucisse farcie au bacon et au sésame",
+  "Rulos.2": "Rouleau de chorizo canarien, fromage à la crème et farci de paprika moulu",
+
+  "Otros": "Autres rouleaux",
+  "Otros.1": "Golfeados",
+  "Otros.2": "Quesadilla",
+
+  "Granizados": "Slushies",
+  "Granizados.1": "Granizado",
+  "Granizados.2": "Cocada",
+  "Granizados.3": "Mocaccino",
+
+  "Rolls.price.1": "2€",
+  "Rolls.price.2": "2€",
+  "Rolls.price.3": "2,2€",
+  "Rolls.price.4": "2,2€",
+  "Rolls.price.5": "2,2€",
+  "Rolls.price.6": "2,7€",
+  "Rolls.price.7": "3€",
+  "Rolls.price.8": "3€",
+  "Rolls.price.9": "3€",
+  "Rolls.price.10": "3€",
+  "Rolls.price.11": "2,5€",
+  "Rolls.price.12": "2,5€",
+  "Rolls.price.13": "0,5€/ud.",
+
+  "Rollos.price.1": "2€",
+  "Rollos.price.2": "2€",
+  "Rollos.price.3": "2,5€",
+  "Rollos.price.4": "2,5€",
+  "Rollos.price.5": "0,5€/ud.",
+
+  "Rulos.price.1": "2€",
+  "Rulos.price.2": "2€",
+
+  "Otros.price.1": "2,5€",
+  "Otros.price.2": "2,2€",
+
+  "Granizados.price.1": "1,5€",
+  "Granizados.price.2": "1,8€",
+  "Granizados.price.3": "1,8€"
+}
