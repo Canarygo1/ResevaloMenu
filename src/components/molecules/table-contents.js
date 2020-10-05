@@ -1,10 +1,12 @@
 import React from "react";
-import PropTypes from "prop-types";
+import PropTypes, {func} from "prop-types";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {FormattedMessage} from "react-intl";
 import StorieComponent from "../atoms/stories-component";
 import Business from "../../business";
+import Container from "react-bootstrap/Container";
+import Image from "react-bootstrap/Image";
 
 TableContents.propTypes = {
     id: PropTypes.string.isRequired,
@@ -13,8 +15,21 @@ TableContents.propTypes = {
 };
 
 function TableContents(props) {
-
     let data = Business(props.id)
+
+    function addedAlergenos(elements) {
+        let alergenosImage = [];
+        if (elements != 'undefined' && elements != null) {
+            for (let i = 0; i < elements.length; i++) {
+                alergenosImage.push(
+                    <Image src={elements[i]}
+                           fluid={true}
+                           style={{width: 30, height: 35}}/>
+                )
+            }
+        }
+        return alergenosImage;
+    }
 
     function createRowWithPrice(number, element) {
         let elementRows = [];
@@ -26,19 +41,24 @@ function TableContents(props) {
         }
         for (let i = 1; i <= number; i++) {
             elementRows.push(
-                <Row>
-                    <Col xs="8" lg="8" md="8" className="ml-3">
-                        <span className="main-inCard">
-                            <FormattedMessage id={`${elementData}.${i}`} defaultMessage={""}/>
-                        </span>
-                    </Col>
-                    <Col xs="1" lg="1" md="1">
-                        <span className={"price-card"} style={{color: `${data.colors[0]['price-text']}`}}>
-                            <FormattedMessage id={`${elementData}.price.${i}`}
-                                              defaultMessage={""}/>
-                        </span>
-                    </Col>
-                </Row>
+                <Container>
+                    <Row>
+                        <Col xs="8" lg="8" md="8" className="ml-3">
+                                <span className="main-inCard">
+                                    <FormattedMessage id={`${elementData}.${i}`} defaultMessage={""}/>
+                                </span>
+                        </Col>
+                        <Col xs="1" lg="1" md="1">
+                                <span className={"price-card"} style={{color: `${data.colors[0]['price-text']}`}}>
+                                    <FormattedMessage id={`${elementData}.price.${i}`}
+                                                      defaultMessage={""}/>
+                                </span>
+                        </Col>
+                    </Row>
+                    <Row className="ml-2">
+                        {addedAlergenos(props.dataBusiness["alergenos"][0][elementData][0][i])}
+                    </Row>
+                </Container>
             )
         }
         return elementRows;
@@ -55,6 +75,7 @@ function TableContents(props) {
     }
 
     function createImages(imagesUrls, imagePreview) {
+        console.log(imagePreview);
         let correct = false;
         if (window.innerWidth > 750 && typeof imagesUrls != 'undefined') {
             for (let i = 0; i < imagesUrls.length; i++) {
@@ -63,7 +84,7 @@ function TableContents(props) {
                     break
                 }
             }
-        }else{
+        } else {
             correct = true;
         }
         if (typeof imagesUrls != 'undefined' && correct === true) {
@@ -75,6 +96,7 @@ function TableContents(props) {
     function createData() {
         let elements = []
         for (let i = 0; i < props.dataBusiness["product-types"].length; i++) {
+            console.log(props.dataBusiness["product-types"][i]["type-sub"]);
             let padding = i === 0 ? 'pt-2' : 'pt-4'
             elements.push(
                 <div>

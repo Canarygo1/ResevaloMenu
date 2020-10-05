@@ -10,10 +10,11 @@
       "web-url": ""
     }
   ],
+
   "product-types": [
     {
       "type": "Rolls",
-      "number": 13
+      "number": 17
     },
     {
       "type": "Rollos",
@@ -24,6 +25,10 @@
       "number": 2
     },
     {
+      "type": "Tartas",
+      "number": 3
+    },
+    {
       "type": "Otros",
       "number": 2
     },
@@ -32,6 +37,7 @@
       "number": 3
     }
   ],
+
   "images-urls": [
     {
       "type-1": [
@@ -51,7 +57,11 @@
         "/images/madremiarolls/Rulo2.mp4"
       ],
       "type-4": [
-        "/images/madremiarolls/Otros.mp4",
+        "/images/madremiarolls/Otros.jpeg",
+        "/images/madremiarolls/Otros.mp4"
+      ],
+      "type-5": [
+        "/images/madremiarolls/Otros.jpeg",
         "/images/madremiarolls/Otros1.mp4",
         "/images/madremiarolls/Otros2.mp4",
         "/images/madremiarolls/Otros3.mp4",
@@ -61,6 +71,198 @@
       ]
     }
   ],
+
+  "alergenos": [
+    {
+      "Rolls": [
+        {
+          "1": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ],
+          "2": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ],
+          "3": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ],
+          "4": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ],
+          "5": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ],
+          "6": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ],
+          "7": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ],
+          "8": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ],
+          "9": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ],
+          "10": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ],
+          "11": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ],
+          "12": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg",
+            "/images/alergenos/frutos_cascara.svg"
+          ],
+          "13": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ],
+          "14": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ],
+          "15": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ],
+          "16": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ]
+        }
+      ],
+
+      "Rollos": [
+        {
+          "1": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ],
+          "2": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ],
+          "3": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ],
+          "4": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ]
+        }
+      ],
+
+      "Rulos": [
+        {
+          "1": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg",
+            "/images/alergenos/sesamo.svg"
+
+          ],
+          "2": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ]
+        }
+      ],
+
+      "Otros": [
+        {
+          "1": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+
+          ],
+          "2": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ]
+        }
+      ],
+
+      "Granizados": [
+        {
+          "1": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+
+          ],
+          "2": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ],
+          "3": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ]
+        }
+      ],
+
+      "Tartas": [
+        {
+          "1": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+
+          ],
+          "2": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ],
+          "3": [
+            "/images/alergenos/lacteos.svg",
+            "/images/alergenos/huevos.svg",
+            "/images/alergenos/gluten.svg"
+          ]
+        }
+      ]
+
+    }
+  ],
+
   "images-preview": [
     {
       "type-1": [
@@ -74,9 +276,13 @@
       ],
       "type-4": [
         "/images/madremiarolls/Otros.jpeg"
+      ],
+      "type-5": [
+        "/images/madremiarolls/Otros.jpeg"
       ]
     }
   ],
+
   "colors": [
     {
       "body": "black",
