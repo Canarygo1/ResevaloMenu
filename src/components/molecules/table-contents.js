@@ -33,7 +33,7 @@ function TableContents(props) {
 
     function createRowWithPrice(number, element) {
         let elementRows = [];
-        let elementData = ''
+        let elementData = '';
         if (element["subtitle"] === true) {
             elementData = element['type-sub']
         } else {
@@ -75,7 +75,6 @@ function TableContents(props) {
     }
 
     function createImages(imagesUrls, imagePreview) {
-        console.log(imagePreview);
         let correct = false;
         if (window.innerWidth > 750 && typeof imagesUrls != 'undefined') {
             for (let i = 0; i < imagesUrls.length; i++) {
@@ -96,7 +95,6 @@ function TableContents(props) {
     function createData() {
         let elements = []
         for (let i = 0; i < props.dataBusiness["product-types"].length; i++) {
-            console.log(props.dataBusiness["product-types"][i]["type-sub"]);
             let padding = i === 0 ? 'pt-2' : 'pt-4'
             elements.push(
                 <div>
