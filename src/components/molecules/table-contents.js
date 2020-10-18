@@ -55,13 +55,19 @@ function TableContents(props) {
                                 </span>
                         </Col>
                     </Row>
-                    <Row className="ml-2">
-                        {addedAlergenos(props.dataBusiness["alergenos"][0][elementData][0][i])}
-                    </Row>
+                    {getAlergenos(i, elementData)}
                 </Container>
             )
         }
         return elementRows;
+    }
+
+    function getAlergenos(value, elementData){
+        if(props.dataBusiness["alergenos"] !== undefined){
+            return <Row className="ml-2">
+                {addedAlergenos(props.dataBusiness["alergenos"][0][elementData][0][value])}
+            </Row>
+        }
     }
 
     function createSubtitle(isSubtitle, subtitle) {
