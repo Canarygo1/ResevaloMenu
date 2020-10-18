@@ -7,7 +7,8 @@ import Image from "react-bootstrap/Image";
 import PropTypes from "prop-types";
 
 DownBarLogos.propTypes = {
-    urls: PropTypes.array.isRequired
+    urls: PropTypes.array.isRequired,
+    colors: PropTypes.array.isRequired
 };
 
 let posibilityIcons = [faFacebook, faInstagram, faGoogle]
@@ -27,8 +28,10 @@ function checkUrls(element, props){
 }
 
 function DownBarLogos(props) {
+    console.log(props.colors[0]["body"]);
+    var color = props.colors[0]["body"].includes("url") ? "#2C2D2F" : props.colors[0].body;
     return (
-        <div className="modal-footer justify-content-center mx-4 mt-4">
+        <div className="modal-footer fixed-bottom justify-content-center" style={{backgroundColor: `${color}`}}>
             {checkUrls(0, props)}
             {checkUrls(1, props)}
             {checkUrls(2, props)}

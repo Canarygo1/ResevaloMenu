@@ -5,7 +5,6 @@ import Col from "react-bootstrap/Col";
 import {FormattedMessage} from "react-intl";
 import StorieComponent from "../atoms/stories-component";
 import Business from "../../business";
-import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 
 TableContents.propTypes = {
@@ -19,7 +18,7 @@ function TableContents(props) {
 
     function addedAlergenos(elements) {
         let alergenosImage = [];
-        if (elements != 'undefined' && elements != null) {
+        if (elements !== 'undefined' && elements != null) {
             for (let i = 0; i < elements.length; i++) {
                 alergenosImage.push(
                     <Image src={elements[i]}
@@ -32,6 +31,7 @@ function TableContents(props) {
     }
 
     function createRowWithPrice(number, element) {
+        let paddingElements = props.dataBusiness["product-types"].length === 1 ? "pt-3" : "";
         let elementRows = [];
         let elementData = '';
         if (element["subtitle"] === true) {
@@ -39,31 +39,32 @@ function TableContents(props) {
         } else {
             elementData = element['type']
         }
+
         for (let i = 1; i <= number; i++) {
             elementRows.push(
-                <Container>
+                <div className={paddingElements}>
                     <Row>
                         <Col xs="8" lg="8" md="8" className="ml-3">
-                                <span className="main-inCard">
+                                <span style={{color: `${data.colors[0]['text-color']}`}}>
                                     <FormattedMessage id={`${elementData}.${i}`} defaultMessage={""}/>
                                 </span>
                         </Col>
                         <Col xs="1" lg="1" md="1">
-                                <span className={"price-card"} style={{color: `${data.colors[0]['price-text']}`}}>
+                                <span style={{color: `${data.colors[0]['price-text']}`}}>
                                     <FormattedMessage id={`${elementData}.price.${i}`}
                                                       defaultMessage={""}/>
                                 </span>
                         </Col>
                     </Row>
                     {getAlergenos(i, elementData)}
-                </Container>
+                </div>
             )
         }
         return elementRows;
     }
 
-    function getAlergenos(value, elementData){
-        if(props.dataBusiness["alergenos"] !== undefined){
+    function getAlergenos(value, elementData) {
+        if (props.dataBusiness["alergenos"] !== undefined) {
             return <Row className="ml-2">
                 {addedAlergenos(props.dataBusiness["alergenos"][0][elementData][0][value])}
             </Row>
@@ -98,6 +99,13 @@ function TableContents(props) {
         }
     }
 
+    function checkImages(imageUrls, imaPreview, i){
+        if(imageUrls !== undefined && imaPreview !== undefined){
+            return createImages(props.dataBusiness["images-urls"][0][`type-${i + 1}`], props.dataBusiness["images-preview"][0][`type-${i + 1}`])
+
+        }
+    }
+
     function createData() {
         let elements = []
         for (let i = 0; i < props.dataBusiness["product-types"].length; i++) {
@@ -113,7 +121,7 @@ function TableContents(props) {
                             </h3>
                         </Col>
                         <Col xs="1" lg="1" md="1">
-                            {createImages(props.dataBusiness["images-urls"][0][`type-${i + 1}`], props.dataBusiness["images-preview"][0][`type-${i + 1}`])}
+                            {checkImages(props.dataBusiness["images-urls"], props.dataBusiness["images-preview"], i)}
                         </Col>
                     </Row>
                     {createSubtitle(props.dataBusiness["product-types"][i]["subtitle"], props.dataBusiness["product-types"][i]["type-sub"])}

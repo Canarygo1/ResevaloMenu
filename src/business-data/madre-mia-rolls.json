@@ -288,7 +288,8 @@
       "body": "black",
       "subtitle": "#E6565A",
       "price-text": "#EBC288",
-      "title-text": "#EBC288"
+      "title-text": "#EBC288",
+      "text-color": "white"
     }
   ]
 }

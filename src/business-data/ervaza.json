@@ -64,7 +64,8 @@
       "body": "#2C2D2F",
       "subtitle": "#E6565A",
       "price-text": "#E6565A",
-      "title-text": "#0090FF"
+      "title-text": "#0090FF",
+      "text-color": "white"
     }
   ]
 }

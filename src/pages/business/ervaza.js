@@ -22,6 +22,7 @@ class Ervaza extends Component {
         super(props, context);
         let data = Business(props.properties.match.params.id)
         document.body.style.backgroundColor = data.colors[0]['body']
+        document.body.style.opacity = "1"
     }
 
     render() {
@@ -31,7 +32,7 @@ class Ervaza extends Component {
                     <Card codeDefault={this.props.properties.match.params.codeDefault}
                           id={this.props.properties.match.params.id}
                           dataBusiness={data} multiLenguage={true}/>
-                    <DownBarLogos urls={data["urls-website"]}/>
+                    <DownBarLogos urls={data["urls-website"]} colors={data["colors"]}/>
                 </IntlProvider>
             </div>
         );

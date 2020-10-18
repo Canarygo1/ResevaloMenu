@@ -1,0 +1,20 @@
+{
+  "servicios": "Servicios",
+  "servicios.1": "Corte de pelo",
+  "servicios.2": "Corte de pelo y barba",
+  "servicios.3": "Corte de pelo, lavado y barba",
+  "servicios.4": "Arreglo de barba",
+  "servicios.5": "Tratamiento facial",
+  "servicios.6": "Mechas",
+  "servicios.7": "Reflejos",
+  "servicios.8": "Colores",
+
+  "servicios.price.1": "12€",
+  "servicios.price.2": "15€",
+  "servicios.price.3": "16€",
+  "servicios.price.4": "6€",
+  "servicios.price.5": "22€",
+  "servicios.price.6": "N/E",
+  "servicios.price.7": "N/E",
+  "servicios.price.8": "N/E"
+}

@@ -1,0 +1,30 @@
+{
+  "urls-website": [
+    {
+      "facebook-url": "https://www.facebook.com/PVLGSALONES/"
+    },
+    {
+      "instagram-url": "https://www.instagram.com/privilege_salones_/"
+    },
+    {
+      "web-url": ""
+    }
+  ],
+
+  "product-types": [
+    {
+      "type": "servicios",
+      "number": 8
+    }
+  ],
+
+  "colors": [
+    {
+      "body": "url('/images/privilege/fondo.jpg')",
+      "subtitle": "#E6565A",
+      "price-text": "#E6495A",
+      "title-text": "#E6495A",
+      "text-color": "#F3F3F3"
+    }
+  ]
+}
